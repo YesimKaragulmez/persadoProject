@@ -1,0 +1,8 @@
+com\assignmentPersado\tests\BaseTest.class
+com\assignmentPersado\pageObjects\GiftCardsPage.class
+com\assignmentPersado\tests\GiftCardPriceVerify.class
+com\assignmentPersado\pageObjects\GiftCardsProductPage.class
+com\assignmentPersado\utilities\Pages.class
+com\assignmentPersado\pageObjects\AmazonHomePage.class
+com\assignmentPersado\pageObjects\CartPage.class
+com\assignmentPersado\pageObjects\BasePage.class
