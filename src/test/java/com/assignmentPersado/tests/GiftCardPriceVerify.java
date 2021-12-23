@@ -15,7 +15,7 @@ public class GiftCardPriceVerify extends BaseTest {
         pages.giftCardsPage().clickProduct(2);// There wasn't the third gift card, so I just selected the second one.
         checkData = pages.giftCardsProductPage().controller().getText(pages.giftCardsProductPage().productPrice.trim());
 
-        // Sometimes select design section pops up so this step closes the window ii it pops up
+        // Sometimes select design section pops up so this step closes the window if it pops up
         if (pages.giftCardsProductPage().controller().isComponentVisible(pages.giftCardsProductPage().selectDesignCloseButton)){
             pages.giftCardsProductPage().clickSelectDesignCloseButton();
         }
