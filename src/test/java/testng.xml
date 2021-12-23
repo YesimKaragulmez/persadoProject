@@ -12,7 +12,7 @@
     <parameter name="actionsLogging" value="true" />
     <parameter name="tests.takeScreenshot" value="true" />
     <parameter name="suite.init.context" value="false"/>
-    <parameter name="waitForElement.Timeout" value="200"/>
+    <parameter name="waitForElement.Timeout" value="500"/>
 
 
 

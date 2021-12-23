@@ -11,6 +11,7 @@ public class GiftCardsPage extends BasePage {
         return "xpath=//span[contains(text(),'" + header + "')]/../following-sibling::ul/li//*[contains(text(),'" + option + "')]/preceding-sibling::div";
     }
 
+
     /**
      * Finds the product based on its index
      * @param indexOfProduct index of product
@@ -27,5 +28,6 @@ public class GiftCardsPage extends BasePage {
     public void clickProduct(int indexOfProduct) {
         controller().click(this.product(indexOfProduct));
     }
+
 
 }

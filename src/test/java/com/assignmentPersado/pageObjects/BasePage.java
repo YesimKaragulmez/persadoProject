@@ -15,20 +15,20 @@ public class BasePage extends WebComponent {
 
     /**
      * Find locators based on its text
-     * @param s module's name on the nov bar
+     * @param name module's name on the nov bar
      * @return locator's xpath
      */
-    public String navBar(String s) {
-        return "xpath=//div[@id='nav-xshop']//a[contains(text(),'" + s + "')]";
+    public String navBar(String name) {
+        return "xpath=//div[@id='nav-xshop']//a[contains(text(),'" + name + "')]";
     }
 
 
     /**
-     * click every module on the nav bar based on text
-     * @param s module name
+     * click every module on the nav bar based on name
+     * @param name module name
      */
-    public void clickNavBar(String s) {
-        controller().press(this.navBar(s));
+    public void clickNavBar(String name) {
+        controller().press(this.navBar(name));
     }
 
     public void clickNavCartIcon() {

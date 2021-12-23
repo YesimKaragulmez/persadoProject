@@ -24,9 +24,7 @@ public class Pages {
     public AmazonHomePage amazonHomePage() {
         return amazonHomePage;
     }
-    public GiftCardsPage giftCardsPage() {
-        return giftCardsPage;
-    }
+    public GiftCardsPage giftCardsPage() {return giftCardsPage; }
     public GiftCardsProductPage giftCardsProductPage() {
         return giftCardsProductPage;
     }
