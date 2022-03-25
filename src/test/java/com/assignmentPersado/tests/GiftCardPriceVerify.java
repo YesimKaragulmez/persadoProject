@@ -1,5 +1,7 @@
 package com.assignmentPersado.tests;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -8,9 +10,10 @@ public class GiftCardPriceVerify extends BaseTest {
     @Test
     public void verifyGiftCardPriceInTheCart(){
 
-        pages.amazonHomePage().closeAddressPopupIfItAppears();
+        pages.amazonHomePage().closeAddressPopupIfItAppears();  ////META-INF/spring/test-beans-*.xml.
         pages.amazonHomePage().clickNavBar("Gift Card");
         pages.giftCardsPage().clickLeftColumnCheckPoint("Delivery Type","Print at Home");
+
         pages.giftCardsPage().clickLeftColumnCheckPoint("Format","Standard Designs");
         pages.giftCardsPage().clickProduct(2);// There wasn't the third gift card, so I just selected the second one.
         checkData = pages.giftCardsProductPage().controller().getText(pages.giftCardsProductPage().productPrice.trim());
